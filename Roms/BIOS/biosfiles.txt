@@ -1,0 +1,13 @@
+AMERICXT.ROM
+AMI 8088-BIOS 31JAN89.BIN
+Award_XT_2.05_2764.bin
+BIOS_5150_27OCT82_U33.BIN
+DTK_ERSO_2.42_2764.bin
+ibm-xt-1982-11-08.rom
+ibm-xt-1986-05-09.rom
+kyocera.rom
+*PCXTBIOS.BIN
+Phoenix XT clone BIOS V2.27 dated 29MAY86.bin
+PHX251MU.BIN
+samsung_samtron_88s_vers_2.0a.bin
+VTech - Laser Turbo XT - BIOS - V1.11 - 27C64D.bin

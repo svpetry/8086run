@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<title>EmuXT - IBM PC/XT emulator</title>
+
+<body>
+    <div id="main">
+        <div id="screen-border">
+            <div id="screen-container">
+                <div id="screen"></div>
+            </div>
+        </div>
+
+        <div id="settings">
+            <div id="system-settings">
+                <span>System</span>
+                <label for="cpu-type">CPU</label>
+                <select id="cpu-type">
+                    <option value="Cpu186">80186</option>
+                    <!-- <option value="Cpu386">80386</option> -->
+                </select>
+
+                <label for="cpu-frequency">CPU frequency</label>
+                <select id="cpu-frequency">
+                    <option value="4777" selected>4.77 MHz</option>
+                    <option value="8000">8 MHz</option>
+                    <option value="12000">12 MHz</option>
+                    <option value="20000">20 MHz</option>
+                </select>
+
+                <label for="bios-image">BIOS image</label>
+                <select id="bios-image"></select>
+
+                <label for="ram-amount">RAM</label>
+                <select id="ram-amount">
+                    <option value="128">128 KB</option>
+                    <option value="256">256 KB</option>
+                    <option value="512">512 KB</option>
+                    <option value="640">640 KB</option>
+                    <option value="1024" selected>1 MB</option>
+                    <option value="2048">2 MB</option>
+                    <option value="4096">4 MB</option>
+                    <option value="16384">16 MB</option>
+                </select>
+
+                <label for="enable-uma">Enable 128 KB UMA</label>
+                <input type="checkbox" id="enable-uma" checked>
+            </div>
+            
+            <div id="devices-settings">
+                <span>Devices</span>
+                <label for="graphics">Graphics</label>
+                <select id="graphics">
+                    <option value="MDA">MDA</option>
+                    <option value="CGA" selected>CGA</option>
+                    <option value="EGA">EGA</option>
+                    <option value="VGA">VGA</option>
+                </select>
+
+                <label for="com1">COM1</label>
+                <select id="com1">
+                    <option value="None">Not present</option>
+                    <option value="NotConnected" selected>Not connected</option>
+                    <option value="EmulatedMouse">Emulated serial mouse</option>
+                </select>
+
+                <label for="com2">COM2</label>
+                <select id="com2">
+                    <option value="None">Not present</option>
+                    <option value="NotConnected">Not connected</option>
+                    <option value="EmulatedMouse" selected>Emulated serial mouse</option>
+                </select>
+
+                <label for="enableRtc">Real time clock</label>
+                <input type="checkbox" id="enable-rtc" checked>
+
+                <label for="enableHdController">Enable HDD controller</label>
+                <input type="checkbox" id="enable-hdcontroller" checked>
+            </div>
+        </div>
+
+        <div id="bottom">
+            <div id="buttons">
+                <div id="run-button" class="button"><img src="img/play.svg"/></div>
+                <div id="stop-button" class="button"><img src="img/stop.svg"/></div>
+                <div id="reset-button" class="button"><img src="img/reset.svg"/></div>
+            </div>
+            <div id="drives">
+                <div class="drive-image"><span class="image-caption">Drive A</span><span class="image-name" id="drivea-image"></span><div id="drivea-button" class="button"><img src="img/eject.svg"/></div></div>
+                <input id="drivea-file" style="display: none" type="file" accept=".im?"/>
+                <div class="drive-image"><span class="image-caption">Drive B</span><span class="image-name" id="driveb-image"></span><div id="driveb-button" class="button"><img src="img/eject.svg"/></div></div>
+                <input id="driveb-file" style="display: none" type="file" accept=".im?"/>
+            </div>
+        </div>
+
+        <script src="js/index.bundle.js" type="text/javascript"></script>
+
+        <a id="debug-link" href="debug.html">Switch to Debugger</a>
+    </div>
+</body>
+
+</html>

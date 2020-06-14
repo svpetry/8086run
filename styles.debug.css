@@ -1,0 +1,134 @@
+#main {
+    margin: auto;
+    width: fit-content;
+    background-color: #606060;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    grid-template-rows: auto auto;
+}
+
+/* left panel */
+
+#buttons {
+    grid-row: 1;
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    width: auto;
+    margin: 5px;
+    height: 30px;
+}
+
+/* screen panel */
+
+#screen-container {
+    grid-row: 1;
+    grid-column: 2;
+    background-color: black;
+    border: 10px solid black;
+    margin: auto;
+    width: 832px;
+    height: 600px;
+    overflow: hidden;
+}
+
+#screen {
+    transform-origin: top left;
+}
+
+/* bottom panel */
+
+#bottom {
+    padding: 10px;
+    grid-row: 2;
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0px 10px;
+}
+
+.header {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    text-align: center;
+    padding: 2px;
+}
+
+/* registers */
+
+#registers {
+    background-color: #202020;
+    font-family: Consolas;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: fit-content;
+    height: fit-content;
+}
+
+#registers-header {
+    grid-column: 1 / 4;
+}
+
+.register-col {
+    
+}
+
+.register span {
+    margin-left: 28px;
+}
+
+.register {
+    width: 100px;
+    background-color: lightgray;
+    padding-left: 5px;
+    margin: 1px;
+}
+
+.register-row {
+    grid-column: 1 / 4;
+    height: 40px;
+    margin-top: -1px;
+    display: flex;
+}
+
+.register-row > * {
+    padding-top: 16px;
+}
+
+.register-flags {
+    width: 207px;
+}
+
+.register-flags span {
+    margin-left: 4px;
+}
+
+/* disassembler */
+
+#disassembler {
+    background-color: #202020;
+    font-family: Consolas;
+    display: grid;
+    width: fit-content;
+    height: fit-content;
+}
+
+#curr-inst {
+    font-family: Consolas;
+}
+
+#instruction-history {
+    overflow-y: auto;
+    border: 1px solid white;
+    width: 520px;
+    height: 154px;
+}
+
+#instruction-history pre {
+    color: #d0d0d0;
+    margin: 2px;
+}
