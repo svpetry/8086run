@@ -23,6 +23,12 @@ button {
     height: 30px;
 }
 
+#info_text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    margin: 20px;
+}
+
 /* screen panel */
 
 #screen-container {
