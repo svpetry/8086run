@@ -12,7 +12,7 @@
    viewBox="0 0 42 42"
    version="1.1"
    id="svg8"
-   sodipodi:docname="eject.svg"
+   sodipodi:docname="download.svg"
    inkscape:version="0.92.1 r15371">
   <defs
      id="defs4">
@@ -25,7 +25,7 @@
   </defs>
   <path
      class="a"
-     d="M 0.65083906,25.159145 18.650839,1.1591442 a 3,3 0 0 1 4.8,0 l 18,24.0000008 a 3,3 0 0 1 -2.41,4.799999 H 3.0408391 A 3,3 0 0 1 0.65083906,25.159145 Z"
+     d="M 0.65083906,4.7591599 18.650839,28.759161 a 3,3 0 0 0 4.8,0 l 18,-24.0000011 a 3,3 0 0 0 -2.41,-4.79999895 H 3.0408391 A 3,3 0 0 0 0.65083906,4.7591599 Z"
      id="path6"
      inkscape:connector-curvature="0"
      style="fill:#d3d4ed" />
@@ -37,5 +37,23 @@
      x="0.1779661"
      y="33.81356"
      rx="2.9746835"
+     ry="3" />
+  <rect
+     style="fill:#d3d4ed;fill-opacity:1;stroke-width:20;stroke-miterlimit:4;stroke-dasharray:none"
+     id="rect4496"
+     width="8.5423727"
+     height="11.923729"
+     x="0"
+     y="28.29661"
+     rx="3"
+     ry="3" />
+  <rect
+     style="fill:#d3d4ed;fill-opacity:1;stroke-width:20;stroke-miterlimit:4;stroke-dasharray:none"
+     id="rect4496-3"
+     width="8.5423727"
+     height="11.923729"
+     x="33.457626"
+     y="28.29661"
+     rx="3"
      ry="3" />
 </svg>
