@@ -54,7 +54,7 @@
                 <label for="enable-uma">Enable 128 KB UMA</label>
                 <input type="checkbox" id="enable-uma" checked>
             </div>
-            
+
             <div id="devices-settings">
                 <span>Devices</span>
                 <label for="graphics">Graphics</label>
@@ -87,30 +87,52 @@
             </div>
         </div>
 
+        <div id="info">
+            <ul>
+                <li>
+                    The emulator can be started by clicking the play button at the bottom left.
+                </il>
+                <li>
+                    Not all BIOS images are working with all hardware configurations.
+                </il>
+                <li>
+                    Only 360 kb and 720 kb disk images are supported. To work with disk images you can use <a
+                        href="https://www.winimage.com/">WinImage</a>.
+                </il>
+                <li>
+                    The higher frequency options require a fast computer.
+                </il>
+            </ul>
+        </div>
+
         <div id="bottom">
             <div id="buttons">
-                <div id="run-button" class="button" title="Start or resume emulation"><img src="img/play.svg"/></div>
-                <div id="stop-button" class="button" title="Stop emulation"><img src="img/stop.svg"/></div>
-                <div id="reset-button" class="button" title="Reset system"><img src="img/reset.svg"/></div>
+                <div id="run-button" class="button" title="Start or resume emulation"><img src="img/play.svg" /></div>
+                <div id="stop-button" class="button" title="Stop emulation"><img src="img/stop.svg" /></div>
+                <div id="reset-button" class="button" title="Reset system"><img src="img/reset.svg" /></div>
                 <div id="mouse-button" class="button">Capture mouse</div>
             </div>
             <div id="drives">
                 <div class="drive-image">
                     <span class="image-caption">Drive A:</span>
                     <span class="image-name" id="drivea-image"></span>
-                    <div id="drivea-button" class="button load-button" title="Load disk image"><img src="img/eject.svg"/></div>
+                    <div id="drivea-button" class="button load-button" title="Load disk image"><img
+                            src="img/eject.svg" /></div>
                     <!-- <div id="newa-button" class="button new-button" title="Insert empty disk image"><img src="img/new.svg"/></div> -->
-                    <div id="dla-button" class="button download-button" title="Download disk image"><img src="img/download.svg"/></div>
+                    <div id="dla-button" class="button download-button" title="Download disk image"><img
+                            src="img/download.svg" /></div>
                 </div>
-                <input id="drivea-file" style="display: none" type="file" accept=".im?"/>
+                <input id="drivea-file" style="display: none" type="file" accept=".im?" />
                 <div class="drive-image">
                     <span class="image-caption">Drive B:</span>
                     <span class="image-name" id="driveb-image"></span>
-                    <div id="driveb-button" class="button load-button" title="Load disk image"><img src="img/eject.svg"/></div>
+                    <div id="driveb-button" class="button load-button" title="Load disk image"><img
+                            src="img/eject.svg" /></div>
                     <!-- <div id="newb-button" class="button new-button" title="Insert empty disk image"><img src="img/new.svg"/></div> -->
-                    <div id="dlb-button" class="button download-button" title="Download disk image"><img src="img/download.svg"/></div>
+                    <div id="dlb-button" class="button download-button" title="Download disk image"><img
+                            src="img/download.svg" /></div>
                 </div>
-                <input id="driveb-file" style="display: none" type="file" accept=".im?"/>
+                <input id="driveb-file" style="display: none" type="file" accept=".im?" />
             </div>
         </div>
 
