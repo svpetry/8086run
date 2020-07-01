@@ -3,7 +3,10 @@
 
 <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/screen.css">
+    <link rel="stylesheet" href="styles/settings.css">
+    <link rel="stylesheet" href="styles/bottom.css">
 </head>
 <title>EmuXT - IBM PC/XT emulator (web edition)</title>
 
@@ -96,7 +99,7 @@
                     Not all BIOS images are working with all hardware configurations.
                 </il>
                 <li>
-                    Only 360 kb and 720 kb disk images are supported. To work with disk images you can use <a
+                    Only 360 kb and 720 kb disk drive images are supported. To work with disk images you can use <a
                         href="https://www.winimage.com/">WinImage</a>.
                 </il>
                 <li>
@@ -106,6 +109,7 @@
         </div>
 
         <div id="bottom">
+            <div id="cpu-load">Emulator load: 0 %</div>
             <div id="buttons">
                 <div id="run-button" class="button" title="Start or resume emulation"><img src="img/play.svg" /></div>
                 <div id="stop-button" class="button" title="Stop emulation"><img src="img/stop.svg" /></div>
@@ -135,11 +139,10 @@
                 <input id="driveb-file" style="display: none" type="file" accept=".im?" />
             </div>
         </div>
-
-        <script src="js/index.bundle.js" type="text/javascript"></script>
-
         <a id="debug-link" href="debug.html">Switch to Debugger</a>
     </div>
+
+    <script src="js/index.bundle.js" type="text/javascript"></script>
 </body>
 
 </html>

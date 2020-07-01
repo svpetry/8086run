@@ -1,0 +1,17 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url("../img/background.jpg");
+}
+
+#main {
+    color: white;
+    background-color: #444444;
+    margin: auto;
+    width: fit-content;
+    padding: 10px;
+    display: grid;
+    border-width: 1px;
+    border-color: white;
+    border-radius: 4px;
+    grid-template-rows: auto auto;
+}
