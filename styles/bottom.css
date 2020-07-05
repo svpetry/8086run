@@ -105,3 +105,15 @@
     margin-left: 10px;
     font-size: 12px;
 }
+
+#actual-load-border {
+    height: 10px;
+    width: 200px;
+    border: 1px solid white;
+}
+
+#actual-load {
+    background-color: #999999;
+    width: 0px;
+    height: 10px;
+}

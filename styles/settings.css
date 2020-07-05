@@ -5,7 +5,7 @@
     width: 600px;
     margin-left: -300px;
     position: absolute;
-    top: 10%;
+    top: 180px;
     left: 50%;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -20,7 +20,7 @@
     width: 600px;
     margin-left: -300px;
     position: absolute;
-    top: 60%;
+    top: 600px;
     left: 50%;
     /* box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.2); */
     border-radius: 5px;
